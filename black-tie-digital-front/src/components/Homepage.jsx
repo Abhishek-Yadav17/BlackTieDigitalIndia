@@ -1,4 +1,4 @@
-import '../styles/HomePage.scss';
+import '../styles/Homepage.scss';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import gsap from 'gsap';
