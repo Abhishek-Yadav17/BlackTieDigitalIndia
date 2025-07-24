@@ -1,0 +1,117 @@
+.page3 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #111;
+    color: #fff;
+    padding: 4vw 0;
+    font-family: NB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 768px) {
+        padding: 10vw 4vw;
+    }
+
+    h1 {
+        font-size: 3vw;
+        margin-bottom: 5vw;
+        z-index: 2;
+
+        @media (max-width: 768px) {
+            font-size: 5.5vw;
+            margin-bottom: 8vw;
+            text-align: center;
+        }
+    }
+
+    .page3-content {
+        max-width: 100%;
+        color: #ccc;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            width: 61%;
+            font-size: 1.2vw;
+            line-height: 2vw;
+            text-align: center;
+
+            @media (max-width: 768px) {
+                font-size: 3.5vw;
+                line-height: 5vw;
+                margin-bottom: 6vw;
+                width: 100%;
+            }
+        }
+
+        ul {
+            max-width: 800px;
+            list-style: none;
+            margin-top: 3vw;
+
+            @media (max-width: 768px) {
+                width: 90%;
+            }
+
+            li {
+                margin-bottom: 1vw;
+                position: relative;
+                padding-left: 2.5vw;
+                font-size: 1.15vw;
+                line-height: 1.7;
+                border-radius: 8px;
+                padding: 1.5vw 2vw 1.5vw 3vw;
+                transition: all ease 0.3s;
+
+                @media (max-width: 768px) {
+                    font-size: 3vw;
+                    margin-bottom: 8vw;
+                    background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(75, 76, 69, 0.6));
+                    padding: 4vw;
+                }
+
+                &::before {
+                    content: '●';
+                    position: absolute;
+                    left: 1vw;
+                    top: 1.6vw;
+                    color: #ffe5cf;
+                    font-size: 1vw;
+
+                    @media (max-width: 768px) {
+                        font-size: 3vw;
+                        left: 1%;
+                        top: 13%;
+                    }
+                }
+
+                strong {
+                    color: #fff;
+                }
+
+                &:hover {
+                    background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(75, 76, 69, 0.6));
+                }
+            }
+        }
+
+        .closing {
+            margin-top: 4vw;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+            font-size: 1.2vw;
+
+            @media (max-width: 768px) {
+                font-size: 3.5vw;
+                line-height: 5vw;
+                width: 100%;
+                margin-top: 5vw;
+            }
+        }
+    }
+}

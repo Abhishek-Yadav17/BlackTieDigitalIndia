@@ -1,0 +1,64 @@
+.page5 {
+    min-height: 20vh;
+    width: 100%;
+    background-color: #111;
+    padding: 4vw 0;
+    color: #fff;
+    font-family: NB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 768px) {
+        padding: 10vw 4vw;
+    }
+
+    h1 {
+        font-size: 3vw;
+
+        @media (max-width: 768px) {
+            font-size: 5.5vw;
+            margin-bottom: 8vw;
+            text-align: center;
+        }
+    }
+
+    .moving-div {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        margin-top: 4vw;
+        z-index: 2;
+
+        .marquee {
+            display: flex;
+            animation: scroll 30s linear infinite;
+            width: max-content;
+
+            .elem {
+                width: 20vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 6vw;
+
+                    @media (max-width: 768px) {
+                        width: 15vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
