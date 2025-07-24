@@ -7,6 +7,9 @@ gsap.registerPlugin(ScrollTrigger);
 const Page1 = () => {
 
     useEffect(() => {
+
+        if (window.innerWidth <= 768) return;
+
         gsap.fromTo(
             ['.page1 h1', '.page1 h3', '.page1 h4', '.page1 .buttons', '.page1 .scroll-down'],
             { y: 100, opacity: 0 },

@@ -10,7 +10,7 @@
     align-items: center;
 
     @media (max-width: 768px) {
-        padding: 10vw 4vw;
+        padding-top: 8vw;
     }
 
     h1 {
@@ -31,6 +31,7 @@
 
         @media (max-width: 768px) {
             height: fit-content;
+            padding-bottom: 0;
         }
 
         .swiper-slide {
@@ -115,7 +116,7 @@
             font-size: 3.5vw;
             line-height: 5vw;
             width: 100%;
-            margin-top: 5vw;
+            margin-top: 15vw;
         }
     }
 
@@ -131,7 +132,7 @@
             font-size: 3.5vw;
             line-height: 5vw;
             width: 100%;
-            margin-top: 5vw;
+            margin-top: 10vw;
         }
 
         i {

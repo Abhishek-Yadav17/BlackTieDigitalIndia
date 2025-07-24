@@ -7,6 +7,9 @@ gsap.registerPlugin(ScrollTrigger);
 const Page3 = () => {
 
     useEffect(() => {
+
+        if (window.innerWidth <= 768) return;
+
         gsap.fromTo(
             ['.page3 h1', '.page3-content > p:first-child'],
             { y: 100, opacity: 0 },

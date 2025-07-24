@@ -11,6 +11,9 @@ import 'swiper/css/pagination';
 const Page6 = () => {
 
     useEffect(() => {
+
+        if (window.innerWidth <= 768) return;
+
         gsap.fromTo(
             '.page6 h1',
             { y: 100, opacity: 0 },

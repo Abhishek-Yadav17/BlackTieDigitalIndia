@@ -15,6 +15,9 @@ gsap.registerPlugin(ScrollTrigger);
 const Homepage = () => {
 
     useEffect(() => {
+
+        if (window.innerWidth <= 768) return;
+
         const crsr = document.querySelector(".cursor");
         const blur = document.querySelector(".cursor-blur");
 

@@ -10,6 +10,9 @@ const Footer = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
+
+        if (window.innerWidth <= 768) return;
+
         gsap.fromTo(
             '.footer h1 span',
             { y: 100, opacity: 0 },

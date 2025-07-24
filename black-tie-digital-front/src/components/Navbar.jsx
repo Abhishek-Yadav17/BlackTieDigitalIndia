@@ -9,6 +9,9 @@ const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
+
+        if (window.innerWidth <= 768) return;
+
         const nav = document.querySelector('nav')
         const navElems = document.querySelectorAll('.nav-part2 h4')
 

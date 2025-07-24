@@ -9,6 +9,9 @@ gsap.registerPlugin(ScrollTrigger);
 const BlackTieInvites = () => {
 
     useEffect(() => {
+
+        if (window.innerWidth <= 768) return;
+
         window.scrollTo(0, 0);
 
         const ctx = gsap.context(() => {
