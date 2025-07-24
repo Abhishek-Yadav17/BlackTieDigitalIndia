@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    overflow-x: hidden;
+    overflow: hidden;
 
     @media (max-width: 768px) {
         padding: 10vw 4vw;
