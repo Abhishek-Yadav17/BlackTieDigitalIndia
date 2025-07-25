@@ -49,6 +49,14 @@ const Homepage = () => {
                 <Page4 />
                 <Page5 />
                 <Page6 />
+                <a
+                    href="https://wa.me/918890099108"
+                    className="whatsapp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img src="/whatsapp.webp" alt="WhatsApp" />
+                </a>
             </main>
             <Footer />
         </>

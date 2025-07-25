@@ -127,7 +127,7 @@ const Page6 = () => {
 
                 <h4>Thanks for stopping by,  let's grow together ?
                 </h4>
-                <h5><i class="ri-phone-fill"></i>Let's bring your vision to life. Call now to book your service</h5>
+                <h5><a href="tel:+919999999999"><i class="ri-phone-fill"></i></a>Let's bring your vision to life. Call now to book your service</h5>
             </div>
         </>
     );
