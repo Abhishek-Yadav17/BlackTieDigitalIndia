@@ -62,7 +62,7 @@ const Page4 = () => {
     return (
         <>
             <div className="page4">
-                <h1>How It Works — Growing Your Business Online Made Simple</h1>
+                <h1>How Can Growing Your Business Online Be So Simple?</h1>
 
                 <div className="step-grid">
                     <div className="step-box">
@@ -100,13 +100,12 @@ const Page4 = () => {
 
                 <div className="closing-content">
                     <p>
-                        Working with us is like having your own in-house digital marketing team — minus the overhead.
-                        If you are ready to grow your business online with a partner who genuinely cares about results, let us talk.
+                        Working with us is like having your own in-house digital marketing team—without the overhead. Ready to grow your business online with a partner who cares? <span>Let's talk.</span>
                     </p>
                     <strong>
-                        Black Tie Digital — the digital marketing agency in Pune that feels like an extension of your team.
+                        Black Tie Digital, a Pune-based agency that feels like part of your team.
                         <br />
-                        Let us grow your brand with strategy, clarity, and a little bit of style.
+                        We grow your brand with strategy, clarity, and style.
                     </strong>
                 </div>
             </div>

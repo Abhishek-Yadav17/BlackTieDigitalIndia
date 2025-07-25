@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import '../styles/Page1.scss'
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -5,6 +6,8 @@ import { useEffect } from 'react';
 gsap.registerPlugin(ScrollTrigger);
 
 const Page1 = () => {
+
+    const navigate = useNavigate();
 
     useEffect(() => {
 
@@ -42,7 +45,7 @@ const Page1 = () => {
                 <h1>Black Tie Digital <span>India</span></h1>
                 <div className="flag"></div>
                 <h3>Reconceptualizing The Idea Of Digital Marketing !</h3>
-                <h4>100% Guaranteed Results In 30 Days !!</h4>
+                <h4>100% Guaranteed Results In 30 Days</h4>
                 <div className="buttons">
                     <button onClick={() => navigate('/services')}>Let's Talk Services<i className="ri-arrow-right-up-line"></i></button>
                     <button onClick={() => navigate('/getintouch')}>Book Free Strategy Call <i className="ri-phone-fill"></i></button>

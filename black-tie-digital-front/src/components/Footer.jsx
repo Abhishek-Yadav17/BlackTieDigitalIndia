@@ -14,7 +14,7 @@ const Footer = () => {
         if (window.innerWidth <= 768) return;
 
         gsap.fromTo(
-            '.footer h1 span',
+            '.footer h1',
             { y: 100, opacity: 0 },
             {
                 y: 0,
@@ -32,33 +32,57 @@ const Footer = () => {
 
     return (
         <footer className="footer">
-            <h1>
-                <span>Black Tie</span>
-                <span>Digital India</span>
-            </h1>
-            <div className="footer-content">
-                <div className="elem">
-                    <h2>Pages</h2>
-                    <h4 onClick={() => navigate('/')}>Home</h4>
-                    <h4 onClick={() => navigate('/aboutus')}>About Us</h4>
-                    <h4 onClick={() => navigate('/services')}>Services</h4>
-                    <h4 onClick={() => navigate('/black-tie-invites')}>Black Tie Invites</h4>
-                    <h4 onClick={() => navigate('/black-tie-events')}>Black Tie Events</h4>
-                    <h4 onClick={() => navigate('/getintouch')}>Contact Us</h4>
+            <div className="footer-top">
+                <div className="footer-right">
+                    <h1>Black Tie Digital India</h1>
+                    <div className="footer-mid">
+                        <h3>📍Head Offices</h3>
+                        <div className="footer-mid-inner">
+                            <div className="mid-inner-left">
+                                <strong>Pune Office : </strong>
+                                Black Tie Digital India
+                                5th Floor, 509 Global Business Hub,
+                                Kharadi, Pune, Maharashtra
+                            </div>
+                            <div className="mid-inner-right">
+                                <strong>Indore Office : </strong>
+                                3rd Floor, AIC, Vijay Nagar,
+                                Indore, Madhya Pradesh
+                            </div>
+                        </div>
+                    </div>
+                    <div className="footer-right-bottom">
+                        <h4>📞 Phone: +91-88900 99108</h4>
+                        <h4>✉ Email: info@blacktiedigital.in</h4>
+                    </div>
                 </div>
-                <div className="elem">
-                    <h2>Socials</h2>
-                    <h4>Instagram</h4>
-                    <h4>Facebook</h4>
-                    <h4>LinkedIn</h4>
-                    <h4>Youtube</h4>
-                    <h4>Twitter</h4>
+                <div className="footer-left">
+                    <div className="elem">
+                        <h2>Pages</h2>
+                        <h4 onClick={() => navigate('/')}>Home</h4>
+                        <h4 onClick={() => navigate('/aboutus')}>About Us</h4>
+                        <h4 onClick={() => navigate('/services')}>Services</h4>
+                        <h4 onClick={() => navigate('/black-tie-invites')}>Black Tie Invites</h4>
+                        <h4 onClick={() => navigate('/black-tie-events')}>Black Tie Events</h4>
+                        <h4 onClick={() => navigate('/getintouch')}>Contact Us</h4>
+                    </div>
+                    <div className="elem">
+                        <h2>Socials</h2>
+                        <h4>Instagram</h4>
+                        <h4>Facebook</h4>
+                        <h4>LinkedIn</h4>
+                        <h4>Youtube</h4>
+                        <h4>Twitter</h4>
+                    </div>
+                    <div className="elem">
+                        <h2>Legal</h2>
+                        <h4>Terms & Conditions</h4>
+                        <h4>Policy</h4>
+                    </div>
                 </div>
-                <div className="elem">
-                    <h2>Policy</h2>
-                    <h4>Security</h4>
-                    <h4>Policy</h4>
-                </div>
+            </div>
+            <div className="footer-bottom">
+                <h4>&copy; Black Tie Digital India. All rights reserved. Your partner in digital innovation — from strategy to success.</h4>
             </div>
         </footer>
     );

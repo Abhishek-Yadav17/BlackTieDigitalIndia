@@ -49,7 +49,7 @@ const Page6 = () => {
     return (
         <>
             <div className="page6">
-                <h1>Testimonials</h1>
+                <h1>Hear From Our Happy Clients</h1>
                 <Swiper
                     modules={[Autoplay, Pagination]}
                     spaceBetween={4}
@@ -125,7 +125,7 @@ const Page6 = () => {
 
                 </Swiper>
 
-                <h4>Thank you for visiting — it's our privilege to be part of your digital success.
+                <h4>Thanks for stopping by,  let's grow together ?
                 </h4>
                 <h5><i class="ri-phone-fill"></i>Let's bring your vision to life. Call now to book your service</h5>
             </div>

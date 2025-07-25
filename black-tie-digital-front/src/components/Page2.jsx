@@ -11,17 +11,17 @@ const Page2 = () => {
         if (window.innerWidth <= 768) return;
 
         gsap.fromTo(
-            ['.page2 h1', '.page2 h4'],
+            ['.page2 h1', '.page2 h2', '.page2 h4'],
             { y: 100, opacity: 0 },
             {
                 y: 0,
                 opacity: 1,
                 duration: 1,
-                stagger: 0.2,
+                stagger: 0.1,
                 ease: 'power3.out',
                 scrollTrigger: {
                     trigger: '.page2',
-                    start: 'top 80%',
+                    start: 'top 90%',
                 },
             }
         );
@@ -62,7 +62,8 @@ const Page2 = () => {
     return (
         <>
             <div className="page2">
-                <h1>Why Choose Black Tie Digital - Your Growth Partner in Pune</h1>
+                <h1>Why Choose Black Tie Digital?</h1>
+                <h2>Your Growth Partner in Pune</h2>
                 <h4>You do not need just another agency - you need a team that actually gets your business, your goals, and your challenges. At Black Tie Digital, we combine smart strategy with clean execution to help your brand grow online - the right way.</h4>
                 <h4>We are here to help you go from <span>"we are trying digital marketing"</span> to <span>"wow, this is working."</span></h4>
 

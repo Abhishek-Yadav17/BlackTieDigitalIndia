@@ -29,7 +29,7 @@ const Page5 = () => {
     return (
         <>
             <div className='page5'>
-                <h1>Our Clients</h1>
+                <h1>Trusted by These Amazing Clients</h1>
                 <div className='moving-div'>
                     <div className='marquee'>
                         <div className='elem'><img src='/csb.png' alt='csb' /></div>
