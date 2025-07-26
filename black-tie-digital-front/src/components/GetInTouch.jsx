@@ -158,7 +158,7 @@ const GetInTouch = () => {
             message: e.target[4].value,
         };
 
-        const res = await fetch('http://localhost:5000/send', {
+        const res = await fetch('https://blacktiedigitalindia.onrender.com/send', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(formData),
