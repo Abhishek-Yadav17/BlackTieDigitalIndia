@@ -216,7 +216,7 @@ const GetInTouch = () => {
                                 <i className='ri-mail-fill'></i>
                                 <h4>E-mail</h4>
                             </div>
-                            <h4>itsblacktiedigital@gmail.com</h4>
+                            <h4>info@blacktiedigitalindia.com</h4>
                         </button>
                         <button>
                             <div className='in-button'>
