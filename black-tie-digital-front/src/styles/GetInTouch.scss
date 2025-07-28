@@ -243,7 +243,7 @@
 
             @media (max-width: 768px) {
                 width: 100%;
-                gap: 3vw;
+                gap: 1vw;
             }
 
             button {
@@ -265,7 +265,7 @@
                 font-family: NB;
 
                 @media (max-width: 768px) {
-                    width: 50%;
+                    width: fit-content;
                     height: fit-content;
                     padding: 4vw;
                     gap: 2vw;
@@ -283,6 +283,7 @@
                         font-size: 1.2vw;
 
                         @media (max-width: 768px) {
+                            margin-right: 1vw;
                             font-size: 3.5vw;
                         }
                     }

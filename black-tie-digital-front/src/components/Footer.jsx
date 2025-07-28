@@ -65,6 +65,7 @@ const Footer = () => {
                         <h4 onClick={() => navigate('/black-tie-invites')}>Black Tie Invites</h4>
                         <h4 onClick={() => navigate('/black-tie-events')}>Black Tie Events</h4>
                         <h4 onClick={() => navigate('/getintouch')}>Contact Us</h4>
+                        <h4 onClick={() => navigate('/team')}>Team</h4>
                     </div>
                     <div className="elem">
                         <h2>Socials</h2>
@@ -76,8 +77,8 @@ const Footer = () => {
                     </div>
                     <div className="elem">
                         <h2>Legal</h2>
-                        <h4>Terms & Conditions</h4>
-                        <h4>Privacy & Policy</h4>
+                        <h4 onClick={() => navigate('/termsandconditions')}>Terms & Conditions</h4>
+                        <h4 onClick={() => navigate('/privacypolicy')}>Privacy & Policy</h4>
                     </div>
                 </div>
             </div>

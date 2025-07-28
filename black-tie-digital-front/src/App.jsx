@@ -5,6 +5,9 @@ import Services from './components/Services';
 import BlackTieEvents from './components/BlackTieEvents';
 import BlackTieInvites from './components/BlackTieInvites';
 import GetInTouch from './components/GetInTouch';
+import Teams from './components/Teams';
+import PrivacyPolicy from './components/PrivacyPolicy';
+import TermsConditions from './components/TermsConditions';
 import './App.css';
 
 function App() {
@@ -17,6 +20,9 @@ function App() {
         <Route path="/black-tie-events" element={<BlackTieEvents />} />
         <Route path="/black-tie-invites" element={<BlackTieInvites />} />
         <Route path="/getintouch" element={<GetInTouch />} />
+        <Route path="/team" element={<Teams />} />
+        <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+        <Route path="/termsandconditions" element={<TermsConditions />} />
       </Routes>
     </Router>
   );

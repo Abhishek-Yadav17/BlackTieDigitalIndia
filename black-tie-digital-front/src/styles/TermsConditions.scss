@@ -1,0 +1,123 @@
+.terms-conditions {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #111;
+    color: white;
+    padding: 10vw 5vw 5vw;
+    font-family: NB, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    text-align: center;
+
+    @media (max-width: 768px) {
+        padding-top: 25vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+
+    h1 {
+        font-size: 3vw;
+        margin-bottom: 4vw;
+        font-weight: 700;
+        position: relative;
+        z-index: 2;
+
+        @media (max-width: 768px) {
+            font-size: 6vw;
+            margin-bottom: 6vw;
+        }
+    }
+
+    .para-wrapper {
+        position: relative;
+        width: 70%;
+        margin-bottom: 6vw;
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+
+        .quote {
+            position: absolute;
+            font-size: 2.3vw;
+            color: #fff;
+
+            @media (max-width: 768px) {
+                font-size: 4vw;
+            }
+        }
+
+        .left-quote {
+            top: -1.5vw;
+            left: 1vw;
+
+            @media (max-width: 768px) {
+                left: -4%;
+                top: -5%;
+            }
+        }
+
+        p {
+            font-size: 1.2vw;
+            line-height: 1.7;
+            color: #bbbbbb;
+            width: 82%;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+
+            @media (max-width: 768px) {
+                font-size: 3.5vw;
+                line-height: 4.5vw;
+                width: 100%;
+            }
+        }
+
+        .right-quote {
+            bottom: -1.5vw;
+            right: 1vw;
+        }
+    }
+
+    .terms-content {
+        width: 75%;
+        align-self: center;
+        text-align: left;
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+
+        p {
+            font-size: 1.2vw;
+            color: #ccc;
+            line-height: 1.8;
+            margin-bottom: 2vw;
+            position: relative;
+            z-index: 2;
+
+            @media (max-width: 768px) {
+                font-size: 3.5vw;
+                margin-bottom: 5vw;
+            }
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 2vw;
+            margin-top: 0.5vw;
+            color: #ddd;
+
+            li {
+                margin-bottom: 0.7vw;
+                font-size: 1.1vw;
+
+                @media (max-width: 768px) {
+                    font-size: 3.5vw;
+                }
+            }
+        }
+    }
+}
