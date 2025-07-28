@@ -53,7 +53,7 @@ const Footer = () => {
                     </div>
                     <div className="footer-right-bottom">
                         <h4>📞 Phone: +91-88900 99108</h4>
-                        <h4>✉ Email: info@blacktiedigital.in</h4>
+                        <h4>✉ Email: info@blacktiedigitalindia.com</h4>
                     </div>
                 </div>
                 <div className="footer-left">
