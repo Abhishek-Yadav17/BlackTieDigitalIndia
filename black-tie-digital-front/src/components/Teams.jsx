@@ -24,6 +24,101 @@ const Teams = () => {
             };
             document.addEventListener('mousemove', onMouseMove);
 
+            const animateSplitText = (selector, stagger = 0.01, useScrollTrigger = false) => {
+                const el = document.querySelector(selector);
+                if (!el) return;
+
+                const text = el.textContent;
+                el.innerHTML = '';
+                text.split('').forEach(char => {
+                    const span = document.createElement('span');
+                    span.textContent = char === ' ' ? '\u00A0' : char;
+                    span.style.display = 'inline-block';
+                    el.appendChild(span);
+                });
+
+                gsap.fromTo(
+                    `${selector} span`,
+                    { y: 100, opacity: 0 },
+                    {
+                        y: 0,
+                        opacity: 1,
+                        duration: 1,
+                        ease: 'power3.out',
+                        stagger,
+                        ...(useScrollTrigger && {
+                            scrollTrigger: {
+                                trigger: el,
+                                start: 'top 85%',
+                                end: 'bottom 70%',
+                                scrub: 1,
+                            }
+                        })
+                    }
+                );
+            };
+
+            animateSplitText('.teams h1', 0.01);
+            animateSplitText('.team-cards h2', 0.02, '.team-cards h2');
+
+            gsap.from('.para-wrapper .left-quote', { x: -70, y: -70, opacity: 0, duration: 2, ease: 'power3.out' });
+            gsap.from('.para-wrapper .right-quote', { x: 70, y: 70, opacity: 0, duration: 2, ease: 'power3.out', delay: 0.3 });
+
+            gsap.from('.para-wrapper>p', {
+                y: 100,
+                opacity: 0,
+                duration: 1,
+                ease: 'power3.out',
+                delay: 0.5
+            });
+
+            gsap.fromTo(".features",
+                { scale: 0.3, opacity: 0 },
+                {
+                    scale: 1,
+                    opacity: 1,
+                    duration: 1,
+                    delay: 0.8,
+                    ease: "back.out(1.7)",
+                    scrollTrigger: {
+                        trigger: ".features",
+                        start: "top 120%",
+                    }
+                }
+            );
+
+            gsap.fromTo(".founder",
+                { scale: 0.3, opacity: 0 },
+                {
+                    scale: 1,
+                    opacity: 1,
+                    duration: 1,
+                    ease: "back.out(1.7)",
+                    scrollTrigger: {
+                        trigger: ".founder",
+                        start: "top 120%",
+                    }
+                }
+            );
+
+            gsap.utils.toArray(".team-card").forEach((card, i) => {
+                const direction = i % 2 === 0 ? -100 : 100;
+                gsap.fromTo(card,
+                    { x: direction, opacity: 0 },
+                    {
+                        x: 0,
+                        opacity: 1,
+                        duration: 0.6,
+                        ease: "power2.out",
+                        scrollTrigger: {
+                            trigger: card,
+                            start: "top 90%",
+                            toggleActions: "play none none none"
+                        }
+                    }
+                );
+            });
+
             return () => {
                 document.removeEventListener('mousemove', onMouseMove);
                 ScrollTrigger.getAll().forEach(trigger => trigger.kill());
@@ -35,45 +130,33 @@ const Teams = () => {
 
     const teamMembers = [
         {
-            name: 'Aarav Singh',
-            image: 'caricature.jpg',
-            description: 'Creative strategist with a passion for brand storytelling.'
+            name: 'Rohit Mishra',
+            section: '(Creative Director)',
+            image: 'card1.jpg',
+            task: '📈 Digital Marketing & Performance',
+            description: 'SEO, ads, and everything in between. Data-driven, ROI-focused, and always optimizing.'
         },
         {
-            name: 'Meera Kapoor',
-            image: 'https://via.placeholder.com/300x300',
-            description: 'Digital marketing expert specializing in SEO and PPC.'
+            name: 'Abhishek Yadav',
+            section: '(Web Designer)',
+            image: '/avatar.webp',
+            task: '💻 Tech & Web Development',
+            description: 'Developers, coders, problem-solvers. They turn pixels into performance.'
         },
         {
-            name: 'Ravi Sharma',
-            image: 'https://via.placeholder.com/300x300',
-            description: 'Front-end developer with a knack for user experience.'
+            name: 'Vikas Joshi',
+            section: '(Creative Director)',
+            image: 'card3.jpg',
+            task: '📈 Digital Marketing & Performance',
+            description: 'SEO, ads, and everything in between. Data-driven, ROI-focused, and always optimizing.'
         },
         {
-            name: 'Simran Kaur',
-            image: 'https://via.placeholder.com/300x300',
-            description: 'Social media manager who crafts viral content.'
+            name: 'Shreya Joshi',
+            section: '(Sales)',
+            image: 'card4.png',
+            task: '📈 Digital Marketing & Performance',
+            description: 'SEO, ads, and everything in between. Data-driven, ROI-focused, and always optimizing.'
         },
-        {
-            name: 'Karan Patel',
-            image: 'https://via.placeholder.com/300x300',
-            description: 'Backend engineer who brings systems to life.'
-        },
-        {
-            name: 'Anjali Verma',
-            image: 'https://via.placeholder.com/300x300',
-            description: 'UX designer focused on creating intuitive interfaces.'
-        },
-        {
-            name: 'Nikhil Rao',
-            image: 'https://via.placeholder.com/300x300',
-            description: 'Brand manager with years of offline campaign success.'
-        },
-        {
-            name: 'Pooja Desai',
-            image: 'https://via.placeholder.com/300x300',
-            description: 'App developer turning complex ideas into mobile apps.'
-        }
     ];
 
     return (
@@ -84,28 +167,48 @@ const Teams = () => {
             <Navbar />
 
             <div className='teams'>
-                <h1>Team</h1>
+                <h1>Meet the Team</h1>
                 <div className='para-wrapper'>
                     <div className='quotes'>
                         <i className='ri-double-quotes-l quote left-quote'></i>
                     </div>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam repudiandae, harum reprehenderit dolorum praesentium, hic maiores doloribus natus aut magni quo eos voluptatibus atque saepe, tempore possimus dolores a corrupti!
+                        At Black Tie Digital India, we're more than just a digital agency — we're a powerhouse of thinkers, creators, strategists, and doers. Our team is the heart of everything we do. Each member brings a unique set of skills, perspectives, and passion to the table, united by one mission: to build impactful digital experiences that drive real results.
                     </p>
                     <div className='quotes'>
                         <i className='ri-double-quotes-r quote right-quote'></i>
                     </div>
                 </div>
+                <div className="features">
+                    <h2>🚀 What Makes Us Different?</h2>
+                    <h4>We don't just work together — we grow together. At Black Tie Digital India, collaboration meets creativity, and strategy meets execution. Our team thrives on innovation, thrives under pressure, and never settles for average.</h4>
+                    <h4>Whether it's branding, marketing, content, web, or performance — our team ensures every project reflects excellence, elegance, and measurable impact.</h4>
+                </div>
                 <div className="team-cards">
-                    <h2>Meet Our Team</h2>
+                    <h2>✨ The Faces Behind the Strategy:</h2>
+                    <div className="founder">
+                        <div className="founder-left">
+                            <h1>Riya Mishra (Founder)</h1>
+                            <h2>💡 Leadership & Strategy</h2>
+                            <h4>Visionaries. Decision-makers. Culture-builders.</h4>
+                            <h4>Guiding our mission with experience and clarity. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur unde qui eligendi quis facilis, repellat in blanditiis, perspiciatis itaque nisi suscipit quibusdam quod! Maiores sapiente eaque numquam. Repudiandae, fugit error.</h4>
+                        </div>
+                        <div className="founder-right">
+                            <img src="Founder.jpg" alt="founder" />
+                        </div>
+                    </div>
                     <div className="team-grid">
                         {teamMembers.map((member, index) => (
                             <div className="team-card" key={index}>
                                 <div className="image-wrapper">
                                     <img src={member.image} alt={member.name} />
                                 </div>
-                                <h3>{member.name}</h3>
-                                <p>{member.description}</p>
+                                <div className="card-inner">
+                                    <h3>{member.name}</h3>
+                                    <h4>{member.section}</h4>
+                                    <h5>{member.task}</h5>
+                                    <p>{member.description}</p>
+                                </div>
                             </div>
                         ))}
                     </div>
