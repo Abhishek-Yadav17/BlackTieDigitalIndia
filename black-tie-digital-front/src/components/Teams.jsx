@@ -144,13 +144,6 @@ const Teams = () => {
             description: 'Developers, coders, problem-solvers. They turn pixels into performance.'
         },
         {
-            name: 'Vikas Joshi',
-            section: '(Creative Director)',
-            image: 'card3.jpg',
-            task: '📈 Digital Marketing & Performance',
-            description: 'SEO, ads, and everything in between. Data-driven, ROI-focused, and always optimizing.'
-        },
-        {
             name: 'Shreya Joshi',
             section: '(Sales)',
             image: 'card4.png',
