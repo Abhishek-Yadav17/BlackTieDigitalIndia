@@ -148,6 +148,12 @@
             overflow: hidden;
             background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(75, 76, 69, 0.6));
 
+            @media (max-width: 600px) {
+                flex-direction: column;
+                height: 60vh;
+                width: 100%;
+            }
+
             .founder-left {
                 width: 50%;
                 height: 100%;
@@ -157,14 +163,33 @@
                 padding: 2vw;
                 gap: 1vw;
 
+                @media (max-width: 600px) {
+                    width: 100%;
+                    height: 60%;
+                    align-items: center;
+                    gap: 4vw;
+                    padding: 4vw;
+                }
+
                 h1 {
                     margin-bottom: 2vw;
                     font-size: 2vw;
+
+                    @media (max-width: 768px) {
+                        font-size: 4vw;
+                        line-height: 5vw;
+                        width: 100%;
+                    }
                 }
 
                 h2 {
                     font-size: 1.5vw;
                     margin-bottom: 2vw;
+
+                    @media (max-width: 768px) {
+                        font-size: 3.5vw;
+                        width: 100%;
+                    }
                 }
 
                 h4 {
@@ -172,12 +197,22 @@
                     line-height: 1.7;
                     font-size: 1.1vw;
                     text-align: left;
+
+                    @media (max-width: 768px) {
+                        font-size: 3.2vw;
+                        text-align: center;
+                    }
                 }
             }
 
             .founder-right {
                 width: 50%;
                 height: 100%;
+
+                @media (max-width: 600px) {
+                    width: 100%;
+                    height: 50%;
+                }
 
                 img {
                     height: 100%;
@@ -190,7 +225,7 @@
 
         .team-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 4vw;
             justify-items: center;
             padding-bottom: 8vw;

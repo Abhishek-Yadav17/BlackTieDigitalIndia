@@ -143,13 +143,6 @@ const Teams = () => {
             task: '💻 Tech & Web Development',
             description: 'Developers, coders, problem-solvers. They turn pixels into performance.'
         },
-        {
-            name: 'Shreya Joshi',
-            section: '(Sales)',
-            image: 'card4.png',
-            task: '📈 Digital Marketing & Performance',
-            description: 'SEO, ads, and everything in between. Data-driven, ROI-focused, and always optimizing.'
-        },
     ];
 
     return (
@@ -183,8 +176,7 @@ const Teams = () => {
                         <div className="founder-left">
                             <h1>Riya Mishra (Founder)</h1>
                             <h2>💡 Leadership & Strategy</h2>
-                            <h4>Visionaries. Decision-makers. Culture-builders.</h4>
-                            <h4>Guiding our mission with experience and clarity. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur unde qui eligendi quis facilis, repellat in blanditiis, perspiciatis itaque nisi suscipit quibusdam quod! Maiores sapiente eaque numquam. Repudiandae, fugit error.</h4>
+                            <h4>Visionaries. Decision-makers. Culture-builders. Guiding our mission with experience and clarity.</h4>
                         </div>
                         <div className="founder-right">
                             <img src="Founder.jpg" alt="founder" />
