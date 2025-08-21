@@ -41,7 +41,7 @@ const Footer = () => {
                             <div className="mid-inner-left">
                                 <strong>Pune Office : </strong>
                                 Black Tie Digital India
-                                5th Floor, 509 Global Business Hub,
+                                5th Floor, 403 Global Business Hub,
                                 Kharadi, Pune, Maharashtra
                             </div>
                             <div className="mid-inner-right">
