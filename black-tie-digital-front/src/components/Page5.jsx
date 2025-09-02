@@ -34,8 +34,8 @@ const Page5 = () => {
                     <div className='marquee'>
                         <div className='elem'><img src='/csb.png' alt='csb' /></div>
                         <div className='elem'><img src='/dubaifashion.png' alt='dubai' /></div>
-                        <div className='elem'><img src='/fooddiaries.jpeg' alt='food' /></div>
-                        <div className='elem'><img src='/gpj.webp' alt='gpj' /></div>
+                        <div className='elem'><img src='/fooddiaries.png' alt='food' /></div>
+                        <div className='elem'><img src='/gpj.png' alt='gpj' /></div>
                         <div className='elem'><img src='/hatimee.webp' alt='hatimee' /></div>
                         <div className='elem'><img src='/mangalyam.png' alt='mangal' /></div>
                         <div className='elem'><img src='/pramila.jpeg' alt='pramila' /></div>
@@ -45,11 +45,12 @@ const Page5 = () => {
                         <div className='elem'><img src='/apple.png' alt='butterfly' /></div>
                         <div className='elem'><img src='/liugong.png' alt='butterfly' /></div>
                         <div className='elem'><img src='/icici.png' alt='butterfly' /></div>
+                        <div className='elem'><img src='/wtcp.png' alt='wtcp' /></div>
 
                         <div className='elem'><img src='/csb.png' alt='csb' /></div>
                         <div className='elem'><img src='/dubaifashion.png' alt='dubai' /></div>
-                        <div className='elem'><img src='/fooddiaries.jpeg' alt='food' /></div>
-                        <div className='elem'><img src='/gpj.webp' alt='gpj' /></div>
+                        <div className='elem'><img src='/fooddiaries.png' alt='food' /></div>
+                        <div className='elem'><img src='/gpj.png' alt='gpj' /></div>
                         <div className='elem'><img src='/hatimee.webp' alt='hatimee' /></div>
                         <div className='elem'><img src='/mangalyam.png' alt='mangal' /></div>
                         <div className='elem'><img src='/pramila.jpeg' alt='pramila' /></div>
@@ -59,6 +60,7 @@ const Page5 = () => {
                         <div className='elem'><img src='/apple.png' alt='butterfly' /></div>
                         <div className='elem'><img src='/liugong.png' alt='butterfly' /></div>
                         <div className='elem'><img src='/icici.png' alt='butterfly' /></div>
+                        <div className='elem'><img src='/wtcp.png' alt='wtcp' /></div>
                     </div>
                 </div>
             </div>
