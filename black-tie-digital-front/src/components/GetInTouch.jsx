@@ -181,69 +181,73 @@ const GetInTouch = () => {
                 <p>At Black Tie Digital India, we are all about turning ideas into impact. Whether you are looking for expert digital marketing, unforgettable events, customized invitations, or thoughtful gifting - we are ready to bring your vision to life.</p>
                 <div className='contact'>
                     <h2>Let us start a conversation.</h2>
-                    <div className='contact-box-wrapper'>
-                        <div className='contact-box'>
-                            <h4><i className='ri-map-pin-line'></i> Pune Office</h4>
-                            <p>Black Tie Digital India</p>
-                            <p>403, 5th Floor, Global Business Hub</p>
-                            <p>Kharadi, Pune - Maharashtra</p>
-                            <p><strong>+91 88900 99108</strong></p>
+                    <div className="contact-inner">
+                        <div className="contact-left">
+                            <div className="contact-box-wrapper">
+                                <div className="contact-box">
+                                    <h4><i className='ri-map-pin-line'></i> Pune Office</h4>
+                                    <p>Black Tie Digital India</p>
+                                    <p>403, 5th Floor, Global Business Hub</p>
+                                    <p>Kharadi, Pune - Maharashtra</p>
+                                    <p><strong>+91 88900 99108</strong></p>
+                                </div>
+                                <div className="contact-box">
+                                    <h4><i className='ri-map-pin-line'></i> Indore Office</h4>
+                                    <p>Black Tie Digital India</p>
+                                    <p>3rd Floor, Prestige AIC</p>
+                                    <p>School No. 74, Vijay Nagar</p>
+                                    <p>Indore - Madhya Pradesh</p>
+                                    <p><strong>+91 91319 59986</strong></p>
+                                </div>
+                            </div>
+                            <div className="timings">
+                                <h4>Working Hours</h4>
+                                <p>Monday to Saturday</p>
+                                <p>10:00 AM - 7:00 PM</p>
+                                <p><em>(Sunday consultations available by appointment)</em></p>
+                            </div>
+                            <div className="contact-footer">
+                                <h2>Let us Collaborate</h2>
+                                <h4>From growing your business online to planning your next big event - Black Tie Digital India is your trusted partner for smart, stylish, and effective solutions.</h4>
+                                <h3>Connect today. Let us make it happen.</h3>
+                            </div>
                         </div>
+                        <div className="contact-right">
+                            <div className='fill-form'>
+                                <h2>Prefer to Reach Us Online?</h2>
+                                <h3>Fill out the form below and we will get back to you within 24 hours.</h3>
+                                <div className='buttons'>
+                                    <button>
+                                        <div className='in-button'>
+                                            <i className='ri-mail-fill'></i>
+                                            <h4>E-mail</h4>
+                                        </div>
+                                        <h4>info@blacktiedigitalindia.com</h4>
+                                    </button>
+                                    <button>
+                                        <div className='in-button'>
+                                            <i className='ri-phone-fill'></i>
+                                            <h4>Phone</h4>
+                                        </div>
+                                        <h4>+91 88900 99108</h4>
+                                    </button>
+                                </div>
 
-                        <div className='contact-box'>
-                            <h4><i className='ri-map-pin-line'></i> Indore Office</h4>
-                            <p>Black Tie Digital India</p>
-                            <p>3rd Floor, Prestige AIC</p>
-                            <p>School No. 74, Vijay Nagar</p>
-                            <p>Indore - Madhya Pradesh</p>
-                            <p><strong>+91 91319 59986</strong></p>
+                                <div className='contact-form'>
+                                    <form onSubmit={sendEmail}>
+                                        <div className='name-fields'>
+                                            <input type='text' placeholder='First Name' />
+                                            <input type='text' placeholder='Last Name' />
+                                        </div>
+                                        <input type='email' placeholder='Email' />
+                                        <input type='tel' placeholder='Phone Number' />
+                                        <textarea placeholder='Your Message'></textarea>
+                                        <button type='submit'>Send Message</button>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div className='timings'>
-                        <h4>Working Hours</h4>
-                        <p>Monday to Saturday</p>
-                        <p>10:00 AM - 7:00 PM</p>
-                        <p><em>(Sunday consultations available by appointment)</em></p>
-                    </div>
-
-                </div>
-                <div className='fill-form'>
-                    <h2>Prefer to Reach Us Online?</h2>
-                    <h3>Fill out the form below and we will get back to you within 24 hours.</h3>
-                    <div className='buttons'>
-                        <button>
-                            <div className='in-button'>
-                                <i className='ri-mail-fill'></i>
-                                <h4>E-mail</h4>
-                            </div>
-                            <h4>info@blacktiedigitalindia.com</h4>
-                        </button>
-                        <button>
-                            <div className='in-button'>
-                                <i className='ri-phone-fill'></i>
-                                <h4>Phone</h4>
-                            </div>
-                            <h4>+91 88900 99108</h4>
-                        </button>
-                    </div>
-
-                    <div className='contact-form'>
-                        <form onSubmit={sendEmail}>
-                            <div className='name-fields'>
-                                <input type='text' placeholder='First Name' />
-                                <input type='text' placeholder='Last Name' />
-                            </div>
-                            <input type='email' placeholder='Email' />
-                            <input type='tel' placeholder='Phone Number' />
-                            <textarea placeholder='Your Message'></textarea>
-                            <button type='submit'>Send Message</button>
-                        </form>
-                    </div>
-                </div>
-                <div className='contact-footer'>
-                    <h2>Let us Collaborate</h2>
-                    <h4>From growing your business online to planning your next big event - Black Tie Digital India is your trusted partner for smart, stylish, and effective solutions.</h4>
-                    <h3>Connect today. Let us make it happen.</h3>
                 </div>
             </div>
 
