@@ -187,7 +187,7 @@ const GetInTouch = () => {
                                 <div className="contact-box">
                                     <h4><i className='ri-map-pin-line'></i> Pune Office</h4>
                                     <p>Black Tie Digital India</p>
-                                    <p>403, 5th Floor, Global Business Hub</p>
+                                    <p>403, 4th Floor, Global Business Hub</p>
                                     <p>Kharadi, Pune - Maharashtra</p>
                                     <p><strong>+91 88900 99108</strong></p>
                                 </div>
