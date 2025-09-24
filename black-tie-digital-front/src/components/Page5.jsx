@@ -46,6 +46,7 @@ const Page5 = () => {
                         <div className='elem'><img src='/liugong.png' alt='butterfly' /></div>
                         <div className='elem'><img src='/icici.png' alt='butterfly' /></div>
                         <div className='elem'><img src='/wtcp.png' alt='wtcp' /></div>
+                        <div className='elem'><img src='/christclg.png' alt='christclg' /></div>
 
                         <div className='elem'><img src='/csb.png' alt='csb' /></div>
                         <div className='elem'><img src='/dubaifashion.png' alt='dubai' /></div>
@@ -61,6 +62,7 @@ const Page5 = () => {
                         <div className='elem'><img src='/liugong.png' alt='butterfly' /></div>
                         <div className='elem'><img src='/icici.png' alt='butterfly' /></div>
                         <div className='elem'><img src='/wtcp.png' alt='wtcp' /></div>
+                        <div className='elem'><img src='/christclg.png' alt='christclg' /></div>
                     </div>
                 </div>
             </div>
