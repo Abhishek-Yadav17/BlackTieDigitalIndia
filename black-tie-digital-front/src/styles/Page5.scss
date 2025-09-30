@@ -42,11 +42,31 @@
                 align-items: center;
 
                 img {
-                    width: 8vw;
+                    width: 10vw;
 
                     @media (max-width: 768px) {
                         width: 15vw;
                     }
+                }
+
+                .tata {
+                    width: 7vw;
+                }
+
+                .wtcp {
+                    width: 15vw;
+                }
+
+                .apple {
+                    width: 6vw;
+                }
+
+                .gpj {
+                    width: 14vw;
+                }
+
+                .dubai {
+                    width: 8vw;
                 }
             }
         }

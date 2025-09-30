@@ -44,10 +44,10 @@ const Homepage = () => {
             <Navbar />
             <main>
                 <Page1 />
+                <Page5 />
                 <Page2 />
                 <Page3 />
                 <Page4 />
-                <Page5 />
                 <Page6 />
                 <a
                     href="https://wa.me/918890099108"
