@@ -135,14 +135,7 @@ const Teams = () => {
             image: 'card1.jpg',
             task: '📈 Digital Marketing & Performance',
             description: 'SEO, ads, and everything in between. Data-driven, ROI-focused, and always optimizing.'
-        },
-        {
-            name: 'Abhishek Yadav',
-            section: '(Web Designer)',
-            image: '/avatar.webp',
-            task: '💻 Tech & Web Development',
-            description: 'Developers, coders, problem-solvers. They turn pixels into performance.'
-        },
+        }
     ];
 
     return (
